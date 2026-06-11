@@ -1,52 +1,119 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title>HarryPiercing</title>
-	<meta property="og:title" content="Harry Seymour — Apprentice Piercer">
+    <meta property="og:title" content="Harry Seymour — Apprentice Piercer">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<link rel="stylesheet" href="styles.css">
-	<script src="https://kit.fontawesome.com/f0904fd6c1.js" crossorigin="anonymous"></script>
+    <!-- Logos -->
+    <script src="https://kit.fontawesome.com/f0904fd6c1.js" crossorigin="anonymous"></script>
 
+    <title>HarryPiercing</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-	<div id="block">
-			<h1>HarryPiercing</h1>
-			<p>Aspiring Piercer | BBV, First Aid & CPR Certified</p>
-	
-			<hr class="v1"> 
-			<p> 
-				Developing knowledge within the body piercing industry and actively seeking apprenticeship opportunities within a professional studio environment. <br>
-				<strong> 
-					<a href="subPages/portfolio.html" class="anchor">Portfolio</a> 
-					<span class="v1">|</span>
-					<a href="subPages/about.html" class="anchor">About Me</a> 
-					<span class="v1">|</span>
-					<a href="subPages/qualifications.html" class="anchor">Qualifications</a> 
-			     </strong>
-			</p>	
-			<hr class="v1">
+    <header class="header">
+        <a href="#home" class="logo">
+            Harry<span>Piercing</span>
+        </a>
 
-		<span>
-			<strong>            
-			<a href="mailto:Harry@HarryPiercing.com" aria-label="Email Harry" class="anchor">Harry@HarryPiercing.com</a>
-			</strong>
-		</span>
+        <i class="fa-solid fa-bars" id="menu-icon"></i>
 
-		
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <!-- <a href="#education">Education</a>
+            <a href="#services">Services</a> -->
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
 
-		<br>
-		<span id="social">
-			<a href="https://www.linkedin.com/in/harryjseymour/"><i class="anchor fab fa-linkedin"></i>LinkedIn</a>
-           <a href="https://www.instagram.com/harrypiercing/"><i class="fa-brands fa-instagram"></i>Instagram</a> 
-		   <a href="https://www.facebook.com/HarryPiercing"><i class="fa-brands fa-facebook-f"></i>Facebook</a> 
-		</span>
-		
-		
-		
-	</div>
+    <section class="home" id="home">
+        <div class="home-circle-1"></div>
+        <div class="home-circle-2"></div>
 
-	<!-- <a href="files/HarryJSeymour.pdf" target="_blank" rel="noopener" class="anchor" style="text-align:center;margin-top:25px;">View CV</a></p> -->
 
+        <div class="home-content">
+            <h3>Hi</h3>
+            <h1>I'm <span>Harry</span></h1>
+            <h3 class="text-animation">
+                I'm a <span></span>
+            </h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo, vitae. Exercitationem recusandae aut quaerat fugiat aliquid. Dignissimos aut error amet voluptatibus, quos quia accusamus magnam ea? Excepturi ratione minima dicta!</p>
+        
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/harryjseymour/"><i class="anchor fab fa-linkedin"></i></a>
+                <a href="https://www.instagram.com/harrypiercing/"><i class="fa-brands fa-instagram"></i></a> 
+                <a href="https://www.facebook.com/HarryPiercing"><i class="fa-brands fa-facebook-f"></i></a> 
+            </div>
+
+
+
+            
+        
+            <a href="files/CV.pdf" class="btn">Download CV</a>
+        </div>
+
+        <div class="home-img">
+            <img src="files/basicLogo.svg" alt="">
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="about-circle"></div>
+            <div class="about-img">
+                <img src="files/basicLogo.svg" alt="">
+            </div>
+
+            <div class="about-content">
+                <h2 class="heading">About <span>Me</span></h2>
+                <h3 class="text-animation"><span></span></h3>
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero molestiae tenetur numquam eos quisquam, deserunt molestias voluptas vel cumque dignissimos deleniti repellat quo repellendus officiis debitis, minus consequuntur! Necessitatibus, voluptatem?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero molestiae tenetur numquam eos quisquam, deserunt molestias voluptas vel cumque dignissimos deleniti repellat quo repellendus officiis debitis, minus consequuntur! Necessitatibus, voluptatem?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero molestiae tenetur numquam eos quisquam, deserunt molestias voluptas vel cumque dignissimos deleniti repellat quo repellendus officiis debitis, minus consequuntur! Necessitatibus, voluptatem?</p>
+
+            <a href="#" class="btn">Read More</a>
+            </div>
+
+    </section>
+
+    <section class="contact" id="contact">
+
+        <h2 class="heading">Contact <span>Me</span></h2>
+
+        <form action="#">
+
+            <div class="input-box">
+                <input type="text" placeholder="Full Name">
+                <input type="email" placeholder="email@email.com">
+            </div>
+
+             <div class="input-box">
+                <input type="number" placeholder="07XXX XXXXXX">
+                <input type="text" placeholder="Subject">
+            </div>
+
+            <textarea name="" id="" cols="30" rows="10" placeholder="Message"></textarea>
+
+            <input type="submit" value="Send Message" class="btn">
+        </form>
+    </section>
+
+    <footer class="footer">
+        <div class="social">
+            <a href="https://www.linkedin.com/in/harryjseymour/"><i class="anchor fab fa-linkedin"></i></a>
+            <a href="https://www.instagram.com/harrypiercing/"><i class="fa-brands fa-instagram"></i></a> 
+            <a href="https://www.facebook.com/HarryPiercing"><i class="fa-brands fa-facebook-f"></i></a> 
+        </div>
+        <ul class="list">
+            <!-- <li></li> -->
+        </ul>
+
+        <p class="copyright">
+            © HarryPiercings | All Rights Reserved
+        </p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
