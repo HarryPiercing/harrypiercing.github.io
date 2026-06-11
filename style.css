@@ -12,8 +12,9 @@
 :root {
     --bg-color: #fcfcfc;
     --second-bg-color: #F7F4F2;
-    --text-color: #D2BFB7;
+    --text-color: #193141;
     --main-color: #193141;
+    --main-text: #D2BFB7;
     --main-color-secondary: #253A49;
 }
 
@@ -56,6 +57,10 @@ body{
 }
 
 span {
+    color: var(--main-text);
+}
+
+span.dark {
     color: var(--main-color);
 }
 
@@ -215,7 +220,7 @@ section {
 
 .text-animation span::before {
     content: 'Aspiring Piercer';
-    color: var(--main-color);
+    color: var(--main-text);
     animation: words 20s infinite;
 }
 
@@ -236,26 +241,27 @@ section {
     }
 }
 
+
 @keyframes words {
     0%,
     20% {
-        content: 'test1';
+        content: 'an Aspiring Piercer';
     }
     21%,
     40% {
-        content: 'test2';
+        content: 'creative & curious';
     }
     41%,
     60% {
-        content: 'test3';
+        content: 'drawn to the details';
     }
     61%,
     80% {
-        content: 'test4';
+        content: 'slowly curating my ears';
     }
     81%,
     100% {
-        content: 'test5';
+         content: 'seeking an apprenticeship'; /* Fucks formatting :/ might change or add padding idk */
     }
 }
 
@@ -300,7 +306,7 @@ section {
     height: 40vw;
     width: 40vw;
     border-radius: 50%;
-    background-color: var(--main-color);
+    background-color: var(--main-color-secondary);
 }
 
 .about-img {
@@ -339,7 +345,7 @@ font-size: 2.6rem;
 
 .about-content .text-animation span::before {
     content: 'Aspiring Piercer';
-    color: var(--main-color);
+    color: var(--main-text);
     animation: words 20s infinite;
 }
 
@@ -358,6 +364,16 @@ font-size: 2.6rem;
 
 .contact {
     background-color: var(--second-bg-color);
+}
+
+.contact-content {
+    /* align-items: center; */
+    text-align: center;
+
+    font-size: 1.6rem;
+    margin: 2rem 0 3rem;
+
+    /* width: 50%; */
 }
 
 .contact h2 {

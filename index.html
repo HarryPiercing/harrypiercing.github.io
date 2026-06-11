@@ -8,7 +8,21 @@
     <script src="https://kit.fontawesome.com/f0904fd6c1.js" crossorigin="anonymous"></script>
 
     <title>HarryPiercing</title>
+    <link rel="icon" type="image/x-icon" href="files/basicLogo.svg">
+
     <link rel="stylesheet" href="style.css">
+
+    <!-- Email Form EmailJS -->
+     <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function(){
+            emailjs.init({
+                publicKey: "6YyH2fMmbkNDlZOr0",
+            });
+        })();
+    </script>
 </head>
 <body>
     <header class="header">
@@ -20,7 +34,7 @@
 
         <nav class="navbar">
             <a href="#home" class="active">Home</a>
-            <a href="#about">About</a>
+            <a href="subPages/about.html">About Me</a>
             <!-- <a href="#education">Education</a>
             <a href="#services">Services</a> -->
             <a href="#contact">Contact</a>
@@ -36,20 +50,20 @@
             <h3>Hi</h3>
             <h1>I'm <span>Harry</span></h1>
             <h3 class="text-animation">
-                I'm a <span></span>
+                I'm <span></span>
             </h3>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo, vitae. Exercitationem recusandae aut quaerat fugiat aliquid. Dignissimos aut error amet voluptatibus, quos quia accusamus magnam ea? Excepturi ratione minima dicta!</p>
+            <p>Aspiring Piercer | BBV, First Aid & CPR Certified</p>
+
+            <p>Developing knowledge within the body piercing industry and actively seeking apprenticeship opportunities within a professional studio environment.
+</p>
         
             <div class="social-icons">
                 <a href="https://www.linkedin.com/in/harryjseymour/"><i class="anchor fab fa-linkedin"></i></a>
                 <a href="https://www.instagram.com/harrypiercing/"><i class="fa-brands fa-instagram"></i></a> 
                 <a href="https://www.facebook.com/HarryPiercing"><i class="fa-brands fa-facebook-f"></i></a> 
+                <a href="https://www.tiktok.com/@harrypiercing"><i class="fa-brands fa-tiktok"></i></a>
+                <a href="mailto:Harry@HarryPiercing.com" aria-label="Email Harry" class="anchor"><i class="fa-solid fa-envelope"></i></a>
             </div>
-
-
-
-            
-        
             <a href="files/CV.pdf" class="btn">Download CV</a>
         </div>
 
@@ -61,18 +75,17 @@
     <section class="about" id="about">
         <div class="about-circle"></div>
             <div class="about-img">
-                <img src="files/basicLogo.svg" alt="">
+                <img src="files/headshot.jpg" alt="">
             </div>
 
             <div class="about-content">
                 <h2 class="heading">About <span>Me</span></h2>
                 <h3 class="text-animation"><span></span></h3>
+                    <p>Motivated aspiring piercer with a longstanding interest in body piercing and body modification, currently seeking apprenticeship opportunities within a professional studio environment.</p>
+                    <p>Completed BBV, First Aid and CPR certification in preparation for entering the industry, alongside several years of customer-facing retail experience developing professionalism, communication, and rapport-building skills.</p>
 
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero molestiae tenetur numquam eos quisquam, deserunt molestias voluptas vel cumque dignissimos deleniti repellat quo repellendus officiis debitis, minus consequuntur! Necessitatibus, voluptatem?</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero molestiae tenetur numquam eos quisquam, deserunt molestias voluptas vel cumque dignissimos deleniti repellat quo repellendus officiis debitis, minus consequuntur! Necessitatibus, voluptatem?</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero molestiae tenetur numquam eos quisquam, deserunt molestias voluptas vel cumque dignissimos deleniti repellat quo repellendus officiis debitis, minus consequuntur! Necessitatibus, voluptatem?</p>
-
-            <a href="#" class="btn">Read More</a>
+                
+            <a href="subPages/about.html" class="btn">Read More</a>
             </div>
 
     </section>
@@ -84,36 +97,51 @@
         <form action="#">
 
             <div class="input-box">
-                <input type="text" placeholder="Full Name">
-                <input type="email" placeholder="email@email.com">
+                <input type="text" placeholder="Full Name" id="name" required>
+                <input type="email" placeholder="email@email.com" id="email" required>
             </div>
 
              <div class="input-box">
-                <input type="number" placeholder="07XXX XXXXXX">
-                <input type="text" placeholder="Subject">
+                <input type="number" placeholder="07XXX XXXXXX" id="number">
+                <input type="text" placeholder="Subject" id="subject" required>
             </div>
 
-            <textarea name="" id="" cols="30" rows="10" placeholder="Message"></textarea>
+            <textarea name="" id="message" cols="30" rows="10" placeholder="Message" required></textarea>
 
-            <input type="submit" value="Send Message" class="btn">
+            <input type="submit" value="Send Message" class="btn" onclick="sendMail()">
         </form>
+
+        <div class="contact-content">
+            <h2>Prefer email?</h2>
+            <p>You can also reach me directly at <a href="mailto:Harry@HarryPiercing.com" aria-label="Email Harry" class="anchor"><span class="dark"><strong>Harry@HarryPiercing.com.</strong></span></a></p>
+            <p>I’m currently open to apprenticeship conversations, advice, or opportunities within professional piercing studios.</p>
+        </div>
+
+
+
+        
+        
     </section>
 
     <footer class="footer">
         <div class="social">
             <a href="https://www.linkedin.com/in/harryjseymour/"><i class="anchor fab fa-linkedin"></i></a>
             <a href="https://www.instagram.com/harrypiercing/"><i class="fa-brands fa-instagram"></i></a> 
-            <a href="https://www.facebook.com/HarryPiercing"><i class="fa-brands fa-facebook-f"></i></a> 
+            <a href="https://www.facebook.com/HarryPiercing"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://www.tiktok.com/@harrypiercing"><i class="fa-brands fa-tiktok"></i></a>
+            <a href="mailto:Harry@HarryPiercing.com" aria-label="Email Harry" class="anchor"><i class="fa-solid fa-envelope"></i></a>
+
         </div>
         <ul class="list">
             <!-- <li></li> -->
         </ul>
 
         <p class="copyright">
-            © HarryPiercings | All Rights Reserved
+            <a href="mailto:Harry@HarryPiercing.com" aria-label="Email Harry" class="anchor"><span><strong>Harry@HarryPiercing.com</strong></span></a> <br> © HarryPiercings | All Rights Reserved
         </p>
     </footer>
 
     <script src="script.js"></script>
+    <script src="sendEmail.js"></script>
 </body>
 </html>

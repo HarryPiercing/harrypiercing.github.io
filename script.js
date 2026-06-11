@@ -1,7 +1,7 @@
 const navbar = document.querySelector(".navbar");
 
 document.addEventListener("click", (e) => {
-    console.log("clicked:", e.target);
+    // console.log("clicked:", e.target);
 
     if (e.target.closest("#menu-icon")) {
         console.log("Burger clicked");
